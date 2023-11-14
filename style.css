@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(197, 197, 250);
+}
+
+.todo-container {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  background-color: aqua;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+.todo-container h1 {
+  margin-bottom: 20px;
+}
+
+.todo-container #message {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+#input {
+  padding: 4px;
+  border-radius: 12px;
+  border: none;
+  min-height: 40px;
+}
+
+.input-container button {
+  border-radius: 12px;
+  padding: 4px;
+  border: none;
+  min-height: 40px;
+  min-width: 80px;
+}
+
+#todos li {
+  background-color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+  padding: 5px;
+  margin-bottom: 10px;
+  min-width: 250px;
+}
+
+#todos li button {
+  margin-left: 8px;
+  padding: 4px;
+  border-radius: 30px;
+  border: none;
+  background-color: red;
+  color: white;
+  min-width: 30px;
+  cursor: pointer;
+}
