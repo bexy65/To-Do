@@ -22,8 +22,6 @@ const removeToDoElement = function (el) {
   messageLog(el);
 };
 
-//transform to show onscreen massage which to-do is removed
-
 const createToDoTask = function () {
   if (!hasWhiteSpace(input.value)) {
     console.log(input.value);
