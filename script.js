@@ -13,7 +13,7 @@ function messageLog(el) {
   message.textContent = `${parEl.textContent.slice(
     0,
     -1
-  )}, to-do removed from To-Do list!`;
+  )}, removed from To-Do list!`;
 }
 
 const removeToDoElement = function (el) {
