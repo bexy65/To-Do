@@ -4,17 +4,17 @@ const todoContainer = document.getElementById('todos');
 const message = document.getElementById('message');
 
 //Check 2 or more whitespace
-function hasWhiteSpace(s) {
+const hasWhiteSpace = function (s) {
   return /\s{2,}/.test(s);
-}
+};
 
-function messageLog(el) {
+const messageLog = function (el) {
   let parEl = el.parentElement;
   message.textContent = `${parEl.textContent.slice(
     0,
     -1
   )}, removed from To-Do list!`;
-}
+};
 
 const removeToDoElement = function (el) {
   let parentEl = el.parentElement;
