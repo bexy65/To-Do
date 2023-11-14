@@ -1,16 +1,14 @@
-// list of items `<li>Todo1 <button>x</button></li>`
-//select button then on click "x" button remove first parent on li
-
 const addButton = document.getElementById('add');
 const input = document.getElementById('input');
 const todoContainer = document.getElementById('todos');
 const message = document.getElementById('message');
 
+//Check 2 or more whitespace
 function hasWhiteSpace(s) {
   return /\s{2,}/.test(s);
 }
 
-function clog(el) {
+function messageLog(el) {
   let parEl = el.parentElement;
   message.textContent = `${parEl.textContent.slice(
     0,
@@ -18,11 +16,10 @@ function clog(el) {
   )}, to-do removed from To-Do list!`;
 }
 
-//!refacotr
 const removeToDoElement = function (el) {
   let parentEl = el.parentElement;
   parentEl.remove();
-  clog(el);
+  messageLog(el);
 };
 
 //transform to show onscreen massage which to-do is removed
